@@ -1,20 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Adds two numbers and bring out result.
+ * add_number - Adds two numbers and bring out result.
+ * @a: integer 1.
+ * @b: integer 2.
  *
- * Return: Always 0.
+ * Return: The sum of the two numbers.
  */
-int main(void)
+int add_number(int a, int b)
 {
-	int a, b, sum;
-
-	a = 5;
-	b = 10;
+	int sum;
 
 	sum = a + b;
 
-	printf("Sum of a and b is: %d\n", sum);
-
-	return (0);
+	return (sum);
 }
