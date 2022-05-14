@@ -1,10 +1,27 @@
 #include "main.h"
 
 /**
- * readln - read the line entered and then break it down.
+ * shell_read_line - read the line entered and then break it down.
  *
- * Return: 0;
+ * Return: characters entered;
  */
-int readln(void)
-{	return (0);
+char *shell_read_line(void)
+{
+	char *line = NULL;
+	size_t bufsize = 0;
+
+	if (getline(&line, &bufsize, stdin) == -1)
+	{
+		if (feof(stdin))
+		{
+			exit(EXIT_SUCCESS);
+		}
+		else
+		{
+			perror("readline");
+			exit(EXIT_FAILURE);
+		}
+	}
+
+	return (line);
 }
