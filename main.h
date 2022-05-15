@@ -15,4 +15,12 @@ char **shell_split_line(char *line);
 int shell_launch(char **argv);
 int shell_execute(char **argv);
 
+/*function declarations for builtin shell commands*/
+int shell_cd(char **argv);
+int shell_help(char **argv);
+int shell_exit(char **argv);
+
+int shell_num_builtins(void);
+
+
 #endif

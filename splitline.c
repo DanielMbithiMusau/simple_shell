@@ -15,7 +15,7 @@ char **shell_split_line(char *line)
 
 	if (!tokens)
 	{
-		perror("./shell");
+		fprintf(stderr, "./shell: allocation error\n");
 		exit(EXIT_FAILURE);
 	}
 
@@ -25,6 +25,18 @@ char **shell_split_line(char *line)
 	{
 		tokens[position] = token;
 		position++;
+
+		if (position >= bufsize)
+		{
+			bufsize += 64;
+			tokens = realloc(tokens, bufsize * sizeof(char *));
+
+			if (!tokens)
+			{
+				fprintf(stderr, "./shell: allocation error.\n");
+				exit(EXIT_FAILURE);
+			}
+		}
 
 		token = strtok(NULL, "\t\n\r\a");
 	}

@@ -28,7 +28,9 @@ int shell_launch(char **argv)
 	}
 	else
 	{
-		wait(&status);
+		do {
+			waitpid(child, &status, WUNTRACED);
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 
 	return (1);
