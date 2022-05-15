@@ -11,8 +11,7 @@ void shell_loop(void)
 	char **argv;
 	int status;
 
-	do
-	{
+	do {
 		printf("#cisfun$ ");
 		line = shell_read_line();
 		argv = shell_split_line(line);
@@ -20,6 +19,5 @@ void shell_loop(void)
 
 		free(line);
 		free(argv);
-	}
-	while (status);
+	} while (status);
 }

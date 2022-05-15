@@ -10,7 +10,7 @@ char **shell_split_line(char *line)
 {
 	int bufsize = 64;
 	int position = 0;
-	char **tokens = malloc(bufsize * sizeof(char*));
+	char **tokens = malloc(bufsize * sizeof(char *));
 	char *token;
 
 	if (!tokens)

@@ -6,7 +6,7 @@
  *
  * Return: 1.
  */
-int shell_launch (char **argv)
+int shell_launch(char **argv)
 {
 	pid_t child;
 	int status;
