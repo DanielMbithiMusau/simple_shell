@@ -1,11 +1,10 @@
 #include "main.h"
 
-
 /**
  * shell_cd - handles change of direction in the terminal.
  * @argv: Arguments passed in the terminal.
  *
- * Return: 1 if succesfull.
+ * Return: 1 if successful.
  */
 int shell_cd(char **argv)
 {
@@ -15,8 +14,7 @@ int shell_cd(char **argv)
 	}
 	else
 	{
-		if (chdir(argv[1]) != 0)
-			perror("./sh");
+		chdir(argv[1]);
 	}
 
 	return (1);
@@ -24,7 +22,7 @@ int shell_cd(char **argv)
 
 /**
  * shell_exit - implements the exit builtin that exits the shell.
- * @argv: arguments passed in the terminal.
+ * @argv: argumentes passed in the terminal.
  *
  * Return: 0.
  */

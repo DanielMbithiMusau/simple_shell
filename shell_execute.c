@@ -1,9 +1,8 @@
 #include "main.h"
 
-/*list of builtin commands, followed by their corresponding functions*/
 char *builtin_str[] = {
 	"cd",
-	"exit"
+	"exit",
 };
 
 int (*builtin_func[]) (char **) = {
@@ -11,8 +10,7 @@ int (*builtin_func[]) (char **) = {
 	&shell_exit
 };
 
-/**
- * shell_num_builtins - returns the allocated size.
+/**shell_num_builtins - returns the allocated size.
  *
  * Return: Allocated size.
  */
@@ -39,5 +37,6 @@ int shell_execute(char **argv)
 		if (strcmp(argv[0], builtin_str[i]) == 0)
 			return ((*builtin_func[i])(argv));
 	}
+
 	return (shell_launch(argv));
 }

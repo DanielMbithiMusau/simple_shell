@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 
@@ -21,6 +22,5 @@ int shell_help(char **argv);
 int shell_exit(char **argv);
 
 int shell_num_builtins(void);
-
 
 #endif
