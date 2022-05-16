@@ -30,3 +30,23 @@ int shell_exit(char **argv __attribute__((unused)))
 {
 	return (0);
 }
+
+/**
+ * shell_env - implements the env attribute to print environment variables.
+ * @argv: arguments passed in the terminal.
+ *
+ * Return: 1.
+ */
+int shell_env(char **argv __attribute__((unused)))
+{
+	unsigned int i;
+
+	i = 0;
+
+	while (environ[i] != NULL)
+	{
+		printf("%s\n", environ[i]);
+		i++;
+	}
+	return (1);
+}

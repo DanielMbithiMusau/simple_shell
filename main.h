@@ -9,6 +9,8 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+extern char **environ;
+
 int add_number(int a,  int b);
 void shell_loop(void);
 char *shell_read_line(void);
@@ -20,6 +22,7 @@ int shell_execute(char **argv);
 int shell_cd(char **argv);
 int shell_help(char **argv);
 int shell_exit(char **argv);
+int shell_env(char **argv);
 
 int shell_num_builtins(void);
 
