@@ -11,7 +11,6 @@
 
 extern char **environ;
 
-int add_number(int a,  int b);
 void shell_loop(void);
 char *shell_read_line(void);
 char **shell_split_line(char *line);
@@ -26,4 +25,19 @@ int shell_env(char **argv);
 
 int shell_num_builtins(void);
 
+
+char *builtin_str[] = {
+	"cd",
+	"exit",
+	"env"
+};
+
+int (*builtin_func[]) (char **) = {
+	&shell_cd,
+	&shell_exit,
+	&shell_env
+};
+
+
 #endif
+

@@ -1,17 +1,5 @@
 #include "main.h"
 
-char *builtin_str[] = {
-	"cd",
-	"exit",
-	"env"
-};
-
-int (*builtin_func[]) (char **) = {
-	&shell_cd,
-	&shell_exit,
-	&shell_env
-};
-
 /**
  * shell_num_builtins - returns the allocated size.
  *
