@@ -1,6 +1,6 @@
 /*
  * File: errors.c
- * Auth: Carol
+ * Auth: Carol and Daniel
  */
 
 #include "shell.h"

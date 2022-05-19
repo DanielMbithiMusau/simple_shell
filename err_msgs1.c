@@ -1,6 +1,6 @@
 /*
  * File: err_msgs1.c
- * Auth: Carol Waithaka
+ * Auth: Carol Waithaka and Daniel Musau
  */
 
 #include "shell.h"
