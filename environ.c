@@ -1,7 +1,6 @@
 /*
  * File: environ.c
  * Auth: Carol Waithaka
- * 
  */
 
 #include "shell.h"

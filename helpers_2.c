@@ -1,7 +1,6 @@
 /*
  * File: helpers_2.c
- * Auth: Carol
- * 
+ * Auth: Carol and Daniel
  */
 
 #include "shell.h"

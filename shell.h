@@ -3,8 +3,7 @@
 
 /*
  * File: shell.h
- * Auth: Victor Mungai
- *
+ * Auth: Daniel and Carol
  */
 
 #include <fcntl.h>

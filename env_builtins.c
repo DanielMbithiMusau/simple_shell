@@ -1,7 +1,6 @@
 /*
  * File: env_builtins.c
  * Auth: Carol Waithaka
- * 
  */
 
 #include "shell.h"

@@ -1,7 +1,6 @@
 /*
  * File: err_msgs2.c
- * Auth: Carol 
- * 
+ * Auth: Carol
  */
 
 #include "shell.h"

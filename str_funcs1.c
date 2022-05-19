@@ -1,6 +1,6 @@
 /*
  * File: str_funcs1.c
- * Auth: Carol
+ * Auth: Carol and Daniel
  */
 
 #include "shell.h"

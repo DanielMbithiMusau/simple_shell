@@ -1,7 +1,6 @@
 /*
  * File: builtin.c
  * Auth: Carol
- * 
  */
 
 #include "shell.h"
