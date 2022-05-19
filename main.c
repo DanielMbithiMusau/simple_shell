@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * File: main.c
  * Auth: Carol
@@ -137,4 +138,20 @@ int main(int argc, char *argv[])
 	free_env();
 	free_alias_list(aliases);
 	return (*exe_ret);
+=======
+#include "main.h"
+
+/**
+ * main - Executes the shell loop.
+ * @argc: Number of arguments on the terminal.
+ * @argv: Arguments on the terminal.
+ *
+ * Return: Always 0
+ */
+int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
+{
+	shell_loop();
+
+	return (0);
+>>>>>>> b0e94eb287f036e7c6a3d7e79f21eb25978359d9
 }
