@@ -9,9 +9,10 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ```
 Once compiled to start the program , run:
-`./hsh`
+```./hsh```
+
 To exit the shell run:
-`$ exit`
+```$ exit```
 
 The shell supports most shell commands, such as `cat`, `pwd`, `ls` and lots more.
 
@@ -50,5 +51,5 @@ The following built-ins are supported by the hsh shell:
 Hsh shell will exit with status 0 unless status is specified with syntax `exit VALUE`.
 
 ## Authors
-Daniel Musau
-Carol Waithaka
+* Daniel Musau
+* Carol Waithaka
